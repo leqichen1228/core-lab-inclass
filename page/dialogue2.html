@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			margin:0;
+			padding:0;
+			border:0;
+			font-family: serif;
+			background-color: black;
+			font-family: "Prestige Elite Std";
+			
+		}	
+
+		div{
+			display: block;
+			position: absolute;
+		}		
+
+		p{
+			margin:0;
+			display: block;
+		}
+
+		.button{
+			position: absolute;
+		  	width:100px;
+		  	height:50px;
+		  	border-radius: 25px;
+			padding-top: 10px;
+			margin-left: 40px;
+			font-size: 30px;
+			cursor: pointer;
+			text-align: center;
+			outline: none;
+			color: red;
+			background-color: white;
+			border: none;
+		}
+
+		.button-2{
+			position: absolute;
+		  	width:100px;
+		  	height:50px;
+		  	border-radius: 25px;
+			padding-top: 10px;
+			margin-left: 530px;
+			font-size: 30px;
+			cursor: pointer;
+			text-align: center;
+			outline: none;
+			color: red;
+			background-color: white;
+			border: none;
+		}
+
+		.button:hover {
+			color:white;
+			background-color: red;
+		}
+
+		.button-2:hover {
+			color:white;
+			background-color: red;
+		}		
+
+
+		#click-1:hover + #ps-1 {
+		    opacity: 1;
+		    width: 100%;
+		}
+
+		#click-2:hover + #ps-2 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-3:hover + #ps-3 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-4:hover + #ps-4 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-5:hover + #ps-5 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-6:hover + #ps-6 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-7:hover + #ps-7 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-8:hover + #ps-8 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-9:hover + #ps-9 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-10:hover + #ps-10 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-11:hover + #ps-11 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-12:hover + #ps-12 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-13:hover + #ps-13 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-14-1:hover + #ps-14-1 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-14-2:hover + #ps-14-2 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#click-15:hover + #ps-15 {
+		  opacity: 1;
+		  width: 100%;
+		}
+
+		#c-1:hover + #pr-1 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+
+		#c-1-2:hover + #pr-1-2 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+
+		#c-2:hover + #pr-2 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+
+		#c-3:hover + #pr-3 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+
+		#c-4-1:hover + #pr-4-1 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+
+		#c-4-2:hover + #pr-4-2 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+
+		#c-5:hover + #pr-5 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+
+		#c-6:hover + #pr-6 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+
+		#c-7:hover + #pr-7 {
+			opacity: 1;
+			width: 100%;
+			padding-left: 0px;
+		}
+		
+
+
+
+		.scarlett-1{
+			display: inline-block;
+			text-align: right;
+			width:500px;
+			height:100px;			
+			margin-top: 200px;
+			color:white;		
+		}
+	
+
+		#ps-1{
+			opacity: 0;			
+			font-size:80px;
+			line-height:50px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 0.8s, opacity 0.8s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+
+		.scarlett-2{
+			text-align: right;
+			width:800px;
+			margin-top: 1500px;
+			background-color:;
+			color:white;
+		}		
+
+		#ps-2{
+			opacity: 0;		
+			font-size:120px;
+			line-height:80px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+
+		#ps-3, #click-3{
+			margin-top:100px;
+		}
+
+
+		#ps-3{
+			opacity: 0;		
+			font-size:60px;
+			line-height:40px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+		#ps-4, #click-4{
+			margin-top:100px;
+		}	
+
+	
+		#ps-4{
+			opacity: 0;		
+			font-size:100px;
+			line-height:50px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 0.5s, opacity 0.5s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+		#ps-5, #click-5{
+			margin-top:100px;
+		}
+
+
+		#ps-5{
+			opacity: 0;							
+			font-size:50px;
+			line-height:30px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: 10px 5px 5px red;
+		}	
+
+
+		.scarlett-3{
+			text-align: right;
+			width:800px;
+			margin-top: 2500px;
+			background-color: ;
+			color:white;
+		}
+
+		#ps-6, #click-6{
+			margin-top:100px;
+		}		
+
+		#ps-6{
+			opacity: 0;	
+			font-size:80px;
+			line-height:50px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 2s, opacity 2s;
+			text-shadow: 10px 5px 5px red;
+		}	
+
+
+		#ps-7, #click-7{
+			margin-top:0px;
+		}
+
+		#ps-7{
+			opacity: 0;		
+			font-size:100px;
+			line-height:60px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 1.5s, opacity 1.5s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+
+
+		.scarlett-4{
+			text-align: right;
+			width:900px;
+			margin-top: 3500px;
+			background-color: ;
+			color:white;
+		}	
+
+		#ps-8, #click-8{
+			margin-top:0px;
+		}	
+
+		#ps-8{
+			opacity: 0;
+			padding:0;			
+			font-size:100px;
+			line-height:80px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 0.6s, opacity 0.6s;
+			text-shadow: 10px 5px 5px red;
+		}	
+
+		#ps-9, #click-9{
+			margin-top:300px;
+		}
+
+		#ps-9{
+			opacity: 0;
+			padding:0;		
+			font-size:140px;
+			line-height:100px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 0.3s, opacity 0.3s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+
+		.scarlett-5{
+			text-align: right;
+			width:800px;
+			margin-top: 6000px;
+			background-color: ;
+			color:white;
+		}	
+
+		#ps-10, #click-10{
+			margin-top:300px;
+		}
+
+		#ps-10{
+			opacity: 0;	
+			font-size:100px;
+			line-height:80px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 0.5s, opacity 0.5s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+		#ps-11, #click-11{
+			margin-top:100px;
+		}
+
+
+		#ps-11{
+			opacity: 0;
+			padding:0;			
+			font-size:50px;
+			line-height:50px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 2s, opacity 2s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+		#ps-12, #click-12{
+			margin-top:100px;
+		}
+
+
+		#ps-12{
+			opacity: 0;
+			padding:0;			
+			font-size:80px;
+			line-height:40px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+
+		.scarlett-6{
+			text-align: right;
+			width:700px;
+			margin-top: 7000px;
+			background-color: ;
+			color:white;
+		}	
+
+		#ps-13, #click-13{
+			margin-top:300px;
+		}
+
+		#ps-13{
+			opacity: 0;
+			padding:0;			
+			font-size:120px;
+			line-height:90px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 0.5s, opacity 0.5s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+		#ps-14-1, #click-14-1{
+			margin-top:200px;
+		}
+
+
+		#ps-14-1{
+			opacity: 0;
+			padding:0;			
+			font-size:80px;
+			line-height:30px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 0.5s, opacity 0.5s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+		#ps-14-2, #click-14-2{
+			margin-top:100px;
+		}
+
+
+
+		#ps-14-2{
+			opacity: 0;
+			padding:0;			
+			font-size:50px;
+			line-height:30px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: 10px 5px 5px red;
+		}
+
+
+		.scarlett-7{
+			text-align: right;
+			width:700px;
+			margin-top: 8000px;
+			background-color: ;
+			color:white;
+		}	
+
+		#ps-15, #click-15{
+			margin-top:600px;
+		}
+
+
+		#ps-15{
+			opacity: 0;
+			padding:0;			
+			font-size:50px;
+			line-height:30px;
+			background-color:none;
+			margin-left: 150px;
+			transform: skewY(20deg);
+			width: 20%;
+			transition: width 3s, opacity 3s;
+			text-shadow: 10px 5px 5px red;
+		}	
+
+
+
+
+		#c-1, #c-1-2, #c-2, #c-3, #c-4-1, #c-4-2, #c-5, #c-6, #c-7{
+			right: 150px;
+		}
+
+		.rhett-1{
+			display: inline-block;
+			width:900px;
+			height:100px;
+			text-align: left;
+			margin-left: 600px;
+			padding-right: 200px;
+			margin-top: 300px;
+			color:white;
+		}
+
+
+		#pr-1{		
+			font-size:80px;
+			line-height:50px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}
+
+
+
+		#pr-1-2, #c-1-2{
+			margin-top:300px;
+		}
+
+		#pr-1-2{		
+			font-size:80px;
+			line-height:80px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}	
+
+		#pr-2, #c-2{
+			margin-top:200px;
+		}	
+
+		#pr-2{		
+			font-size:50px;
+			line-height:30px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 2s, opacity 2s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}	
+
+
+		.rhett-2{
+			display: inline-block;
+			width:900px;
+			height:100px;
+			text-align: left;	
+			padding-right: 200px;
+			margin-left: 600px;
+			margin-top: 4200px;
+			color:white;
+			
+		}
+
+		#pr-3, #c-3{
+			margin-top:200px;
+		}
+
+
+		#pr-3{		
+			font-size:50px;
+			line-height:50px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 2s, opacity 2s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}
+
+
+		#c-4-1{
+			margin-top: 300px;
+		}
+
+		#pr-4-1{	
+			margin-top:200px;	
+			font-size:90px;
+			line-height:60px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 0.5s, opacity 0.5s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}	
+
+		#pr-4-2, #c-4-2{
+			margin-top:200px;
+		}
+
+		#pr-4-2{		
+			font-size:70px;
+			line-height:50px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 2s, opacity 2s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}	
+
+		#pr-5, #c-5{
+			margin-top:200px;
+		}
+
+		#pr-5{		
+			font-size:100px;
+			line-height:60px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}
+
+		.rhett-3{
+			display: inline-block;
+			width:900px;
+			height:100px;
+			text-align: left;
+			padding-right: 200px;
+			margin-left: 600px;
+			margin-top: 8000px;
+			color:white;
+			
+		}		
+
+		#pr-6, #c-6{
+			margin-top:200px;
+		}
+
+		#pr-6{		
+			font-size:80px;
+			line-height:30px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 1s, opacity 1s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}
+
+		#pr-7, #c-7{
+			margin-top:200px;
+		}
+
+		#pr-7{		
+			font-size:50px;
+			line-height:80px;
+			padding-left: 350px;
+			opacity: 0;
+			width: 20%;
+			transition: width 0.5s, opacity 0.5s;
+			text-shadow: -10px 5px 5px red;
+			transform: skewY(160deg);
+		}		
+
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="div-body">
+		<div class="scarlett-1">
+			<div class="button" id="click-1">S</div>
+			<p id="ps-1">What are you doing?</p>
+		</div>
+		<div class="scarlett-2">
+			<div class="button" id="click-2">S</div>
+			<p id="ps-2">OH, NO!</p>
+			<div class="button" id="click-3">S</div>
+			<p id="ps-3">No, you're wrong,</p>
+			<div class="button" id="click-4">S</div>
+			<p id="ps-4">TERRIBLY WRONG!</p>
+			<div class="button" id="click-5">S</div>
+			<p id="ps-5">I don't want a divorce.</p>
+		</div>
+		<div class="scarlett-3">
+			<div class="button" id="click-6">S</div>
+			<p id="ps-6">Oh Rhett, but I knew tonight, when I...</p>
+			<div class="button" id="click-7">S</div>
+			<p id="ps-7">when I knew I loved you, I ran home to tell you,</p>
+		</div>
+		<div class="scarlett-4">
+			<div class="button" id="click-8">S</div>
+			<p id="ps-8">oh darling,</p>
+			<div class="button" id="click-9">S</div>
+			<p id="ps-9">DARLING!</p>
+		</div>
+		<div class="scarlett-5">
+			<div class="button" id="click-10">S</div>
+			<p id="ps-10">This LAST?</p>
+			<div class="button" id="click-11">S</div>
+			<p id="ps-11">OH Rhett, do listen to me,</p>
+			<div class="button" id="click-12">S</div>
+			<p id="ps-12">I must have loved you for years, only I was such a stupid fool, I didn't know it.</p>
+		</div>
+		<div class="scarlett-6">
+			<div class="button" id="click-13">S</div>
+			<p id="ps-13">Please BELIEVE ME,</p>
+			<div class="button" id="click-14-1">S</div>
+			<p id="ps-14-1">you must care!</p>
+			<div class="button" id="click-14-2">S</div>
+			<p id="ps-14-2">Melly said you did.</p>
+		</div>
+		<div class="scarlett-7">
+			<div class="button" id="click-15">S</div>
+			<p id="ps-15">I... I never really loved Ashley.</p>		
+		</div>
+
+		<div class="rhett-1">
+			<div class="button-2" id="c-1">R</div>
+			<p id="pr-1">I'm LEAVING YOU,</p>	
+			<div class="button-2" id="c-1-2">R</div>		
+			<p id="pr-1-2">my dear.</p>
+			<div class="button-2" id="c-2">R</div>
+			<p id="pr-2">All you need now is a divorce and your dreams of Ashley can come true.</p>
+		</div>
+		<div class="rhett-2">
+			<div class="button-2" id="c-3">R</div>
+			<p id="pr-3">PLEASE don't go on with this,</p>
+			<div class="button-2" id="c-4-1">R</div>
+			<p id="pr-4-1">Leave us some DIGNITY</p>
+			<div class="button-2" id="c-4-2">R</div>
+			<p id="pr-4-2">to remember out of our marriage.</p>
+			<div class="button-2" id="c-5">R</div>
+			<p id="pr-5">SPARE US THIS LAST.</p>
+		</div>
+		<div class="rhett-3">
+			<div class="button-2" id="c-6">R</div>
+			<p id="pr-6">I believe you.</p>
+			<div class="button-2" id="c-7">R</div>
+			<p id="pr-7">What about Ashley Wilkes?</p>
+		</div>
+
+	</div>
+	
+</body>
+</html>

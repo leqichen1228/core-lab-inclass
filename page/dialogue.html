@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			margin:0;
+			padding:0;
+			border:0;
+			font-family: serif;
+			background-color: #503B2F;
+			
+		}	
+
+		div{
+			display: block;
+		}
+
+		.div-title{
+			text-align: center;
+			margin-top:5%;
+			margin-bottom:0;
+			width:100%;
+			font-size:50px;
+			font-family:weather_sunday_-_personal_uRg;
+    		font-weight: normal;
+    		font-style: normal;
+			line-height: 20px;
+			color:#FFFBA4;
+		}
+
+		@font-face {
+		    font-family:weather_sunday_-_personal_uRg;
+		    src: url(weather_sunday_-_personal_use-webfont.woff);
+		    font-weight: normal;
+		    font-style: normal;
+
+}
+
+		.div-body{
+			margin-left:10%;
+			margin-top:5%;
+			margin-bottom:10%;
+			width:80%;
+			border-color:#FFFBA4;
+			border-style: double;
+		}
+		
+
+		.scarlett{
+			margin-left:15%;
+			margin-right:45%;
+			color:#FFA4A4;
+
+		}
+
+		.rhett{
+			margin-left:50%;
+			margin-right:10%;
+			color: #A4B8FF;
+		}
+
+		#ps-1{
+			font-family:;
+			font-size:25px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:30px;
+			padding-left:8vw;
+			margin-top:12vw;
+		}
+
+		#ps-2{
+			font-family:;
+			font-size:40px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:50px;
+			padding-left:12vw;
+			margin-top:10vw;
+		}	
+
+		#ps-3{
+			font-family:;
+			font-size:30px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:30px;
+			padding-left:3vw;
+			margin-top:1vw;
+		}
+
+		#ps-4{
+			font-family:;
+			font-size:40px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:35px;
+			padding-left:12vw;
+			margin-top:0;
+		}
+
+		#ps-5{
+			font-family:;
+			font-size:25px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:28px;
+			padding-left:3vw;
+			margin-top:5vw;
+		}
+
+		#ps-6{
+			font-family:;
+			font-size:25px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:30px;
+			padding-left:3vw; 
+			margin-top:6vw;
+		}
+
+		#ps-7{
+			font-family:;
+			font-size:30px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:30px;
+			padding-left:3vw;
+			margin-top: 2vw;
+		}
+
+		#ps-8{
+			font-family:;
+			font-size:40px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:40px;
+			padding-left:8vw;
+			margin-top:4vw;
+		}
+
+		#ps-9{
+			font-family:;
+			font-size:50px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:50px;
+			padding-left:12vw;
+			margin-top:2vw;
+		}
+
+		#ps-10{
+			font-family:;
+			font-size:40px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:40px;
+			padding-left:8vw;
+			margin-top:10vw;
+		}
+
+		#ps-11{
+			font-family:;
+			font-size:30px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:40px;
+			padding-left:3vw;
+			margin-top:5vw;
+		}
+
+		#ps-12{
+			font-family:;
+			font-size:30px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:35px;
+			padding-left:3vw;
+			margin-top:3vw;
+		}
+
+		#ps-13{
+			font-family:;
+			font-size:40px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:40px;
+			padding-left:8vw;
+			margin-top:6vw;
+		}
+
+		#ps-14{
+			font-family:;
+			font-size:50px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:50px;
+			padding-left:12vw;
+			margin-top:0vw;
+		}
+
+		#ps-14-2{
+			font-family:;
+			font-size:30px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:30px;
+			padding-left:8vw;
+			margin-top:1vw;
+		}	
+
+		#ps-15{
+			font-family:;
+			font-size:20px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:30px;
+			padding-left:3vw;
+			margin-top:10vw;
+			margin-bottom: 10vw;
+		}
+
+		#pr-1{
+			font-family:;
+			font-size:32px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:50px;
+			padding-left:10vw;
+			margin-top:10vw;
+		}
+
+		#pr-1-2{
+			font-family:;
+			font-size:27px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:20px;
+			padding-left:10vw;
+			margin-top:3vw;
+		}
+
+		#pr-2{
+			font-family:;
+			font-size:22px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:35px;
+			padding-left:5vw;
+			margin-top:6vw;
+		}
+
+		#pr-3{
+			font-family:;
+			font-size:25px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:30px;
+			padding-left:10vw;
+			margin-top:10vw;
+		}
+
+		#pr-4{
+			font-family:;
+			font-size:30px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:35px;
+			padding-left:5vw;
+			margin-top:2vw;
+		}
+
+		#pr-5{
+			font-family:;
+			font-size:35px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:50px;
+			padding-left:5vw;
+			margin-top:5vw;
+		}
+
+		#pr-6{
+			font-family:;
+			font-size:25px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:30px;
+			padding-left:10vw;
+			margin-top:10vw;
+		}
+
+		#pr-7{
+			font-family:;
+			font-size:30px;
+			letter-spacing:; 
+			font-weight:;
+			line-height:25px;
+			padding-left:5vw;
+			margin-top:5vw;
+		}
+
+
+		#image{
+			position: fixed;
+			left:200px;
+			bottom: 80px;
+			width:5vw;
+			height: auto;
+			z-index: 10000;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="div-title">
+		<p id="title">Gone With The Wind</p>
+	</div>
+	<div class="div-body">
+		<p class="scarlett" id="ps-1">What are you doing?</p>
+		<p class="rhett" id="pr-1">I'm leaving you,</p>
+		<p class="rhett" id="pr-1-2">my dear.</p>
+		<p class="rhett" id="pr-2">All you need now is a divorce and your dreams of Ashley can come true.</p>
+		<p class="scarlett" id="ps-2">Oh, no!</p>
+		<p class="scarlett" id="ps-3">No, you're wrong,</p>
+		<p class="scarlett" id="ps-4">terribly wrong!</p>
+		<p class="scarlett" id="ps-5">I don't want a divorce.</p>
+		<p class="scarlett" id="ps-6">Oh Rhett, but I knew tonight, when I...</p>
+		<p class="scarlett" id="ps-7">when I knew I loved you, I ran home to tell you,</p>
+		<p class="scarlett" id="ps-8">oh darling,</p>
+		<p class="scarlett" id="ps-9">darling!</p>
+		<p class="rhett" id="pr-3">Please don't go on with this,</p>
+		<p class="rhett" id="pr-4">Leave us some dignity to remember out of our marriage.</p>
+		<p class="rhett" id="pr-5">Spare us this last.</p>
+		<p class="scarlett" id="ps-10">This last?</p>
+		<p class="scarlett" id="ps-11">Oh Rhett, do listen to me,</p>
+		<p class="scarlett" id="ps-12">I must have loved you for years, only I was such a stupid fool, I didn't know it.</p>
+		<p class="scarlett" id="ps-13">Please believe me,</p>
+		<p class="scarlett" id="ps-14">you must care!</p>
+		<p class="scarlett" id="ps-14-2">Melly said you did.</p>
+		<p class="rhett" id="pr-6">I believe you.</p>
+		<p class="rhett" id="pr-7">What about Ashley Wilkes?</p>
+		<p class="scarlett" id="ps-15">I... I never really loved Ashley.</p>		
+	</div>
+
+	<img id="image" src="love.png">
+
+
+		
+
+		
+
+
+
+</body>
+</html>

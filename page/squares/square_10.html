@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<style type="text/css">
+		
+		*{
+			margin:0;
+			background-color: black;
+		}	
+
+
+		.big_div{
+			background-color: none;
+			margin-left:25%;
+			margin-right:25%;
+			margin-top:10%;
+			margin-bottom:10%;
+			width:500px;
+			height:500px;
+		}
+
+		.middle_div{
+			background-color: orange;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left:0;
+			margin-right:0;
+			margin-top:0;
+			margin-bottom:0;
+			height:50%;
+			width: 50%;		
+		}	
+
+		.quarter{
+			background-color: purple;
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left:0;
+			margin-right:0;
+			margin-top:0;
+			margin-bottom:0;
+			height: 100%;
+			width: 100%;
+		}
+
+		#div_1{
+			height:70%;
+			width:70%;
+			margin-left:30%;
+			margin-top:30%;
+		}
+
+		#div_2{
+			height:70%;
+			width:70%;
+			margin-top:30%;
+		}
+
+		#div_3{
+			height:70%;
+			width:70%;
+			margin-left:30%;
+		}
+
+		#div_4{
+			height:70%;
+			width:70%;
+		}
+
+		#quarter_1{
+			border-radius: 100% 0 0 0;
+
+		}
+
+		#quarter_2{
+			border-radius: 0 100% 0 0;
+
+		}
+
+		#quarter_3{
+			border-radius: 0 0 0 100%;
+
+		}
+
+		#quarter_4{
+			border-radius: 0 0 100% 0;
+
+		}
+
+		#quarter_5{
+			border-radius: 100% 0 0 0;
+
+		}
+
+		#quarter_6{
+			border-radius: 0 100% 0 0;
+
+		}
+
+		#quarter_7{
+			border-radius: 0 0 0 100%;
+
+		}
+
+		#quarter_8{
+			border-radius: 0 0 100% 0;
+
+		}
+
+
+	</style>	
+
+</head>
+<body>
+
+	<div class="big_div">
+		<div class="middle_div">
+			<div class="quarter" id="quarter_1">
+				<div class="middle_div" id="div_1">
+					<div class="quarter" id="quarter_5"></div>
+				</div>
+			</div>
+		</div
+		><div class="middle_div">
+			<div class="quarter" id="quarter_2">
+				<div class="middle_div" id="div_2">
+					<div class="quarter" id="quarter_6"></div>
+				</div>
+			</div>
+		</div
+		><div class="middle_div">
+			<div class="quarter" id="quarter_3">
+				<div class="middle_div" id="div_3">
+					<div class="quarter" id="quarter_7"></div>
+				</div>
+			</div>
+		</div
+		><div class="middle_div">
+			<div class="quarter" id="quarter_4">
+				<div class="middle_div" id="div_4">
+					<div class="quarter" id="quarter_8"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
